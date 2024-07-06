@@ -21,13 +21,14 @@ public class Lobby_Manager : MonoBehaviour, INetworkRunnerCallbacks
     public GameObject lobby_Session_Prefab;
     public Dictionary<string, GameObject> SessionListUIDictionary = new Dictionary<string, GameObject>();
 
-
+    
    
 
     public string PlayScene;
     public string LobbyScene;
 
     public GameObject PlayerPrefab;
+    
 
     private void Awake()
     {
@@ -88,15 +89,13 @@ public class Lobby_Manager : MonoBehaviour, INetworkRunnerCallbacks
     {
         if(player == runnerInstance.LocalPlayer)
         {
-            
-            NetworkObject playerObject = runner.Spawn(PlayerPrefab, Vector3.up);
+            NetworkObject playerObject = runner.Spawn(PlayerPrefab,new Vector3(0,5,0));
             runner.SetPlayerObject(player, playerObject);
         }
     }
     public void OnSessionListUpdated(NetworkRunner runner, List<SessionInfo> sessionList) 
     {
         DeleteOldSessionsFromUI(sessionList);
-
         CompareLists(sessionList);
     }
 
