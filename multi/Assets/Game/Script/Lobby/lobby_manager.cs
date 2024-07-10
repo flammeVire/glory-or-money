@@ -89,7 +89,7 @@ public class Lobby_Manager : MonoBehaviour, INetworkRunnerCallbacks
     {
         if(player == runnerInstance.LocalPlayer)
         {
-            NetworkObject playerObject = runner.Spawn(PlayerPrefab,new Vector3(0,5,0));
+            NetworkObject playerObject = runner.Spawn(PlayerPrefab,Vector3.up);
             runner.SetPlayerObject(player, playerObject);
         }
     }
