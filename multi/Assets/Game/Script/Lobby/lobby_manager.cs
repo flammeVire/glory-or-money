@@ -7,7 +7,7 @@ using System;
 using static System.Collections.Specialized.BitVector32;
 using UnityEditor;
 using UnityEngine.SceneManagement;
-
+using TMPro;
 
 
 
@@ -21,15 +21,15 @@ public class Lobby_Manager : MonoBehaviour, INetworkRunnerCallbacks
     public GameObject lobby_Session_Prefab;
     public Dictionary<string, GameObject> SessionListUIDictionary = new Dictionary<string, GameObject>();
 
-    
-   
+    public string PlayerName = "";
+    public TMP_InputField InputField;
 
     public string PlayScene;
     public string LobbyScene;
 
     public GameObject PlayerPrefab;
-    
 
+    #region Unity Function
     private void Awake()
     {
         runnerInstance = gameObject.GetComponent<NetworkRunner>();
@@ -45,6 +45,9 @@ public class Lobby_Manager : MonoBehaviour, INetworkRunnerCallbacks
         runnerInstance.JoinSessionLobby(SessionLobby.Shared,lobbyName);
     }
 
+    #endregion
+
+    #region lobby button
     public static void ReturnToLobby()
     {
         Lobby_Manager.runnerInstance.Despawn(runnerInstance.GetPlayerObject(runnerInstance.LocalPlayer));
@@ -67,7 +70,6 @@ public class Lobby_Manager : MonoBehaviour, INetworkRunnerCallbacks
         });
     }
 
-
     public int GetSceneIndex(string sceneName)
     {
         for(int i = 0; i < SceneManager.sceneCountInBuildSettings; i++)
@@ -81,15 +83,21 @@ public class Lobby_Manager : MonoBehaviour, INetworkRunnerCallbacks
         }
         return -1;
     }
-
+    
+    public void ChangePlayerName()
+    {
+        PlayerName = InputField.text;       
+    }
+    
+    #endregion
 
     #region INetworkRunnerCallBacks Function Used
-    
+
     public void OnPlayerJoined(NetworkRunner runner, PlayerRef player)
     {
         if(player == runnerInstance.LocalPlayer)
         {
-            NetworkObject playerObject = runner.Spawn(PlayerPrefab,Vector3.up);
+            NetworkObject playerObject = runner.Spawn(PlayerPrefab,Vector3.up,Quaternion.identity,runner.LocalPlayer,NewNamePlayer);
             runner.SetPlayerObject(player, playerObject);
         }
     }
@@ -105,6 +113,7 @@ public class Lobby_Manager : MonoBehaviour, INetworkRunnerCallbacks
     }
     #endregion
 
+    #region Session ui
     private void CompareLists(List<SessionInfo> sessionList)
     {
         foreach (SessionInfo session in sessionList) 
@@ -169,8 +178,7 @@ public class Lobby_Manager : MonoBehaviour, INetworkRunnerCallbacks
             }
         }
     }
-
-
+    #endregion
 
     #region INetworkRunnerCallBacks Function not Used
     public void OnConnectedToServer(NetworkRunner runner){}
@@ -193,4 +201,14 @@ public class Lobby_Manager : MonoBehaviour, INetworkRunnerCallbacks
    
     public void OnUserSimulationMessage(NetworkRunner runner, SimulationMessagePtr message) {}
     #endregion
+
+    public void NewNamePlayer(NetworkRunner runner, NetworkObject networkObject)
+    {
+        var Script = networkObject.GetComponent<Network_Player>();
+        if (Script != null)
+        {
+            Script.SpawnName = PlayerName;
+        }
+       
+    }
 }

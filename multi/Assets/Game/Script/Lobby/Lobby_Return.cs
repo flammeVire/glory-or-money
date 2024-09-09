@@ -4,8 +4,22 @@ using UnityEngine;
 
 public class Lobby_Return : MonoBehaviour
 {
+    public bool hasPressedStart = false;
+
     public void ReturnToTheLobby()
     {
-        Lobby_Manager.ReturnToLobby();
+        if (!hasPressedStart)
+        {
+            Lobby_Manager.ReturnToLobby();
+        }
+    }
+    public void IsReady()
+    {
+        if (!hasPressedStart)
+        {
+            hasPressedStart = true;
+        }
+        Debug.Log("CanLeave" + hasPressedStart);
+
     }
 }

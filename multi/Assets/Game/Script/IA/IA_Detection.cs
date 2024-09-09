@@ -7,13 +7,11 @@ using UnityEngine;
 public class IA_Detection : MonoBehaviour
 {
     public SphereCollider Spherecollider;
-
     public List<GameObject> TargetList;
 
     public float Radius = 4;
     public GameObject NewTarget = null;
     public GameObject CurrentTarget = null;
-    public bool InChase;
 
     private void Start()
     {
@@ -28,7 +26,6 @@ public class IA_Detection : MonoBehaviour
         {
             NewTarget = other.gameObject;
             ListAdd(NewTarget);
-            InChase = true;
         }
     }
 
@@ -81,7 +78,6 @@ public class IA_Detection : MonoBehaviour
         }
         else
         {
-            InChase = false;
             return null;
         }
        

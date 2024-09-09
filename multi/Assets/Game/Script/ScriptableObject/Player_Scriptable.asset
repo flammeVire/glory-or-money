@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4066731bb5d7a7e4cb6c966b43b793fe, type: 3}
+  m_Name: Player_Scriptable
+  m_EditorClassIdentifier: 
+  Life: 100
+  Speed: 2
+  Degat: 1
+  ActivePowerUp: 00000000
+  PlayerName: 
+  Score: 0
+  Xp: 0
+  Level: 0
+  DelayWeapon: 1
+  DelaySpell1: 0
+  DelaySpell2: 0
+  DelaySpell3: 0
+  OG_Life: 1
+  OG_Speed: 4
+  OG_Degat: 0
+  OG_DelayWeapon: 0
+  OG_DelaySpell1: 1
+  OG_DelaySpell2: 2
+  OG_DelaySpell3: 3
+  War_Life: 120
+  War_Speed: 2
+  War_Degat: 20
+  War_DelayWeapon: 3
+  War_DelaySpell1: 10
+  War_DelaySpell2: 20
+  War_DelaySpell3: 30
+  Range_Life: 80
+  Range_Speed: 3
+  Range_Degat: 10
+  Range_DelayWeapon: 1
+  Range_DelaySpell1: 6
+  Range_DelaySpell2: 8
+  Range_DelaySpell3: 10
+  Rogue_Life: 90
+  Rogue_Speed: 3
+  Rogue_Degat: 15
+  Rogue_DelayWeapon: 1
+  Rogue_DelaySpell1: 3
+  Rogue_DelaySpell2: 4
+  Rogue_DelaySpell3: 5
+  Mage_Life: 70
+  Mage_Speed: 3
+  Mage_Degat: 17
+  Mage_DelayWeapon: 2
+  Mage_DelaySpell1: 9
+  Mage_DelaySpell2: 6
+  Mage_DelaySpell3: 3

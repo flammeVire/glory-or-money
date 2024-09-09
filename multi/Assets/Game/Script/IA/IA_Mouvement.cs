@@ -2,106 +2,159 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Fusion;
-using UnityEngine.UIElements;
-using Unity.VisualScripting;
-using TMPro;
+using System.ComponentModel;
+using System;
 public class IA_Mouvement : NetworkBehaviour
 {
-    public float Speed = 2f;
-    Vector3 SpawnPoint;
-    public IA_Detection Detection;
-    Rigidbody rb;
-    public float StopDistance = 0.1f;
-    bool Retour = false;
+    [SerializeField] IA_Detection Detection;
+    [SerializeField] IA_Network NetIA;
+
+    [SerializeField] Rigidbody rb;
+
+    public float StopDistance = 0.2f;
     public float DistanceLimite;
 
+    public bool CanMove = true;
+    public bool Retour = false;
+    public bool IsPatrol = false;
+
+    public NetworkObject Mesh;
+    public GameObject Target;
+
+    public Animator animator;
+
+    public Vector3 SpawnPoint;
+    
+    Vector3 PatrolPoint;
+
+    #region Unity Function
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        //animator = GetComponent<Animator>();
         SpawnPoint = transform.position;
-        if (this.GetComponent<NetworkTransform>() == null)
-        {
-            this.AddComponent<NetworkTransform>();
-        }
+        PatrolPoint = Utilitaire.GetRandomVectorFromOrigin(DistanceLimite / 2, 0.08f, SpawnPoint);
     }
 
-    void FixedUpdate()
+    public void FixedUpdate()
     {
-        bool InChase = Detection.InChase;
-        GameObject Target = Detection.CurrentTarget;
 
-
-        if (!Limite(SpawnPoint, DistanceLimite))
+        if (CanMove)
         {
-            if(Target != null && InChase)
+            Target = Detection.CurrentTarget;
+            if (Retour)
             {
-                Follow(InChase, Target.transform);
+               // Debug.Log("BoucleRetour");
+                if (!LimiteReach(SpawnPoint, StopDistance))
+                {
+                    Retour = false;
+                }
+                else
+                {
+                    Follow(SpawnPoint);
+                }
             }
-            else if(Target == null) 
+            else
             {
-                RetourSpawn(Target);
+                if (LimiteReach(SpawnPoint, DistanceLimite))
+                {
+                    Retour = true;
+                }
+                else
+                {
+                    if (Target == null)
+                    {
+                        if (!LimiteReach(SpawnPoint, StopDistance))         
+                        {
+                            IsPatrol = true;
+                        }
+                        else 
+                        {
+                            Follow(SpawnPoint); 
+                        }
+                    }
+                    else
+                    {
+                       // Debug.Log("boucle target = true");
+                        IsPatrol = false;
+                        Follow(Target.transform.position);
+                    }
+
+                }
+
+            }
+            if (IsPatrol)
+            {
+                Patrol();
             }
 
         }
-
-        else { Retour = true; }
-        
-        if(Retour)
-        {
-            RetourSpawn(Target);
-        }
-
+       // Debug.Log("Point de patrouille = " + PatrolPoint);
     }
 
+    #endregion
 
-    private void Follow(bool Chase,Transform target)
+    private void Follow(Vector3 targetPosition)
     {
-       Vector3 targetPosition = target.position;
-       Vector3 currentPosition = transform.position;
 
+        animator.SetTrigger("Walking");
+
+        Vector3 currentPosition = transform.position;
+
+        LookingAtTarget(targetPosition);
+       // Debug.Log("It follow" + targetPosition.ToString());
         float distance = Vector3.Distance(currentPosition, targetPosition);
 
         if (distance > StopDistance )
         {
-            Vector3 directionOfTravel = targetPosition - currentPosition;
-            directionOfTravel.Normalize();
-            rb.MovePosition(currentPosition + (directionOfTravel * Speed * Time.deltaTime));
+          //  Debug.Log("il suis encore");
+            Vector3 directionOfTravel = (targetPosition - currentPosition).normalized;
+            Vector3 newPosition = currentPosition + (directionOfTravel * NetIA.EnnemisScriptableClone.Speed * Runner.DeltaTime);
+
+            // Utiliser MovePosition pour déplacer le Rigidbody de manière fluide
+            rb.MovePosition(newPosition);
         }
+
     }
-
-
-    private bool Limite(Vector3 Spawn, float limite)
+    private bool LimiteReach(Vector3 Spawn, float limite)
     {
-        bool IsLimiteReach;
+     //   Debug.Log("distance du spawn = " + Vector3.Distance(transform.position,Spawn));
         if(Vector3.Distance(transform.position, Spawn) > limite)
         {
-           return IsLimiteReach = true;
+           return true;
         }
         else
         {
-            return IsLimiteReach = false;
+            return false;
         }
     }
 
-    private void RetourSpawn(GameObject Target)
+    private void Patrol()
     {
-            Vector3 currentPosition = transform.position;
-            Vector3 directionOfTravel = SpawnPoint - currentPosition;
-            directionOfTravel.Normalize();
-            rb.MovePosition(currentPosition + (directionOfTravel * Speed * Time.deltaTime));
-          
-            if (Vector3.Distance(transform.position,SpawnPoint) <= 0.2f)
+        if(!IsPatrol)
         {
-            Retour = false;
+            IsPatrol = true;
         }
+        else
+        {
+            
+            if(!LimiteReach(PatrolPoint,StopDistance)) 
+            {
+               // Debug.Log("Point de patrouille atteins");
+                IsPatrol = false;
+                PatrolPoint = Utilitaire.GetRandomVectorFromOrigin(DistanceLimite / 2, 0.08f, SpawnPoint);
+            }
+            Follow(PatrolPoint);
+        }
+            
+        
     }
 
+    private void LookingAtTarget(Vector3 target)
+    {
+       // Debug.Log("REGARDE " + target.ToString());
+        //Mesh.transform.LookAt(target);
+    }
 
-    // comportement :
-    // suis un joueur si il peut chasser
-    // si un joueur il ne suis plus aucun joueur reviens
-    //si il reviens ET que quelqu'un rentre en detection, reviens
-    //si il atteins sa limite reviens
-    //si le joueurs reviens car obj == null -> si atk, joueur qui attaque = current target 
-
+    
 }

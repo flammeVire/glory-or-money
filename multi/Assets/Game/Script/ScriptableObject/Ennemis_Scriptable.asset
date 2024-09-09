@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a747ef80eb341e4c992b5c478314edc, type: 3}
+  m_Name: Ennemis_Scriptable
+  m_EditorClassIdentifier: 
+  Life: 5
+  Speed: 0.8
+  Degat: 6
+  MonsterType: 0
+  XpLoot: 4.3975277
+  GoldLoot: 2.8188124
+  DelayAttack: 2
+  OG_Life: 5
+  OG_Speed: 0.8
+  OG_Degat: 6
+  MinXp: 1
+  MaxXp: 5
+  MinOr: 1
+  MaxOr: 10
