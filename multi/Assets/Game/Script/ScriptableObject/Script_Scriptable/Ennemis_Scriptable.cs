@@ -18,8 +18,8 @@ public class EnnemisScriptable : ScriptableObject
 
 
     [SerializeField] private float OG_Life;
-    [SerializeField] private float OG_Speed;
-    [SerializeField] private float OG_Degat;
+    [SerializeField] public float OG_Speed;
+    [SerializeField] public float OG_Degat;
     [SerializeField] private float MinXp;
     [SerializeField] private float MaxXp;
     [SerializeField] private float MinOr;

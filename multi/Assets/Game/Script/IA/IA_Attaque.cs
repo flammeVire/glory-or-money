@@ -1,5 +1,7 @@
+using Fusion;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class IA_Attaque : MonoBehaviour
@@ -8,17 +10,19 @@ public class IA_Attaque : MonoBehaviour
     public bool IsAttacking;
     public List<GameObject> AttackTarget;
     public Animator animator;
+    public float Damage;
 
     private void Start()
     {
         StartCoroutine(Attack());
+        Damage = NetIA.EnnemisScriptableClone.Degat;
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player")
         {
-            Debug.Log("can attack");
+           // Debug.Log("can attack");
             AttackTarget.Add(other.gameObject);
             IsAttacking = true;
         }
@@ -44,8 +48,8 @@ public class IA_Attaque : MonoBehaviour
 
         animator.SetBool("Attaking", true);
         animator.SetTrigger("Punching");
-        NetIA.GetComponent<IA_Mouvement>().CanMove = false;
-        Debug.Log("Wait to Attacking");
+        //NetIA.GetComponent<IA_Mouvement_WalkToward>().CanMove = false;
+       // Debug.Log("Wait to Attacking");
         yield return new WaitForSeconds(NetIA.EnnemisScriptableClone.DelayAttack);
 
         animator.SetBool("Attaking", false);
@@ -56,18 +60,41 @@ public class IA_Attaque : MonoBehaviour
             if (PossibleTarget != null)
             {
                 Network_Player NetPlayer = PossibleTarget.GetComponentInParent<Network_Player>();         //recuperer le script
-                NetPlayer.PlayerScriptableClone.Life -= NetIA.EnnemisScriptableClone.Degat; // inflige les degats
+                if (NetPlayer.PlayerScriptableClone != null)
+                {
+                    NetPlayer.PlayerScriptableClone.Life -= NetIA.EnnemisScriptableClone.Degat; // inflige les degats
+                }
             }
         }
 
 
-        NetIA.GetComponent<IA_Mouvement>().CanMove = true;
+        //NetIA.GetComponent<IA_Mouvement_WalkToward>().CanMove = true;
        
 
         StartCoroutine(Attack());
     }
 
 
+    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    public void Rpc_ChangeScriptableStat(float multiply)
+    {
+        Debug.Log("Buff Monster atk");
+        StartCoroutine(DelayResetStat(Damage));
+        Damage *= multiply;
+        
+
+    }
+
+
+    IEnumerator DelayResetStat(float OG)
+    {
+        yield return new WaitForSeconds(2);
+        Debug.Log("ResetDEGATS");
+        if (NetIA.EnnemisScriptableClone != null)
+        {
+            Damage = OG;
+        }
+    }
     /*
      
         Quand un joueur Rentre dans la zone d'attaque -> attaque:

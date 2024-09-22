@@ -16,10 +16,10 @@ MonoBehaviour:
   Speed: 2
   Degat: 1
   ActivePowerUp: 00000000
-  PlayerName: 
-  Score: 0
   Xp: 0
   Level: 0
+  TotalGold: 0
+  CurrentGold: 0
   DelayWeapon: 1
   DelaySpell1: 0
   DelaySpell2: 0
@@ -35,16 +35,16 @@ MonoBehaviour:
   War_Speed: 2
   War_Degat: 20
   War_DelayWeapon: 3
-  War_DelaySpell1: 10
-  War_DelaySpell2: 20
-  War_DelaySpell3: 30
+  War_DelaySpell1: 4
+  War_DelaySpell2: 3
+  War_DelaySpell3: 5
   Range_Life: 80
   Range_Speed: 3
   Range_Degat: 10
   Range_DelayWeapon: 1
   Range_DelaySpell1: 6
-  Range_DelaySpell2: 8
-  Range_DelaySpell3: 10
+  Range_DelaySpell2: 4
+  Range_DelaySpell3: 5
   Rogue_Life: 90
   Rogue_Speed: 3
   Rogue_Degat: 15
@@ -56,6 +56,6 @@ MonoBehaviour:
   Mage_Speed: 3
   Mage_Degat: 17
   Mage_DelayWeapon: 2
-  Mage_DelaySpell1: 9
+  Mage_DelaySpell1: 4
   Mage_DelaySpell2: 6
   Mage_DelaySpell3: 3

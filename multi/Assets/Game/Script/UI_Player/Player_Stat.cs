@@ -14,7 +14,7 @@ public class Player_Stat : MonoBehaviour
     public TextMeshProUGUI levelText;
 
 
-    float MaxHealth;
+    public float MaxHealth;
     float LastCurrentHealth;
 
     float MaxXp;
@@ -23,7 +23,7 @@ public class Player_Stat : MonoBehaviour
 
     private void Start()
     {
-        MaxHealth = NetPlayer.PlayerScriptableClone.Life;
+        MaxHealth = NetPlayer.maxHp;
         LastCurrentHealth = MaxHealth;
         MaxXp = NetPlayer.NextLevel;
         LastCurrentXP = NetPlayer.CurrentXP;
@@ -43,7 +43,7 @@ public class Player_Stat : MonoBehaviour
     {
         float currentHealth = NetPlayer.PlayerScriptableClone.Life;     // recuperer les dgt   
 
-        Debug.Log("current health == " + currentHealth);
+        //Debug.Log("current health == " + currentHealth);
         if (currentHealth != LastCurrentHealth)
         {
            // float degatTaken = MaxHealth - currentHealth;

@@ -297,6 +297,7 @@ MonoBehaviour:
   - {fileID: 5707698142817521269}
   - {fileID: 838010795142817513}
   - {fileID: 8992978071960981945}
+  - {fileID: 1629036520004727618}
 --- !u!114 &281840006554719718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,10 +421,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 846a252e307c15d449a147fd52e8e912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpawnClass: 0
   Player: {fileID: 8033372235492182785}
   Mesh1: {fileID: 2520562011567011624, guid: 8eb4e292b9a57804b91473e7f7ed8988, type: 3}
   Mesh2: {fileID: 5584090255523060519, guid: d30484c45cefb4341ba3c47fe9dc5907, type: 3}
-  Mesh3: {fileID: 2533484965074022133, guid: a26af3f1d9b71b74289ba8cd538f74dd, type: 3}
+  Mesh3: {fileID: 1144719535466686667, guid: a26af3f1d9b71b74289ba8cd538f74dd, type: 3}
   Mesh4: {fileID: -9193044504160570385, guid: 747b982ef99811a49ae5ae72e4312516, type: 3}
   MeshNone: {fileID: -1873368922447463797, guid: f9ff1f091762d75429f83b5f66f05ead, type: 3}
   CamPrefab: {fileID: 1778809325406708900, guid: 6355f2acfaac1b143abc81dad00871f3, type: 3}
@@ -440,20 +442,26 @@ MonoBehaviour:
   PlayerScriptableClone: {fileID: 0}
   NetGame: {fileID: 0}
   PlayerPowerup: {fileID: 1629036520004727618}
+  AttaqueScript: {fileID: 0}
   IsAttaking: 0
   IsLooking: 0
   UsingSpell1: 0
   UsingSpell2: 0
   UsingSpell3: 0
-  IsReady: 0
+  IsInterracting: 0
+  IsAGhost: 0
   MousePos: 0
   SpawnName: 
   NextLevel: 10
-  _currentlevel: 0
-  _CurrentXP: 0
   CurrentClass: 0
   _PlayerName: 
   _PlayerScore: 0
+  _currentLevel: 0
+  _CurrentXP: 0
+  _CurrentGold: 0
+  _TotalGold: 0
+  _Speed: 0
+  _IsReady: 0
 --- !u!114 &8992978071960981945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -466,6 +474,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55c1a71a6c889894980e9e09ec294a61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ForceLook: 0
+  target: {fileID: 0}
 --- !u!114 &1629036520004727618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -479,6 +489,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NetPlayer: {fileID: 838010795142817513}
+  Radius: 3
+  DelayWarriorTank: 5
+  DelayWarriorRage: 3
+  HealingCircleObj: {fileID: 6248825872153961669, guid: 449d7ec2c91950147b9be6ad5d162d0c, type: 3}
+  PlayerLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  MonsterLayer:
+    serializedVersion: 2
+    m_Bits: 256
   IsSpell1: 0
   IsSpell2: 0
   IsSpell3: 0

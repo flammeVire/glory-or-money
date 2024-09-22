@@ -9,21 +9,25 @@ public class Player_Attaque : NetworkBehaviour
     public GameObject Target = null;
     public Collider Collider_Arme;
     public NetworkObject Projectile;
-    float Delay;
-    float Degat;
-
-    
-
+    public float Delay;
+    public float Degat;
 
     private void Start()
     {
         if (!HasInputAuthority) {  return; }
         NetPlayer = GetComponentInParent<Network_Player>();
-        StartCoroutine(Attaking());
+        
         
 
         Degat = NetPlayer.PlayerScriptableClone.Degat;
         Delay = NetPlayer.PlayerScriptableClone.DelayWeapon;
+        StartCoroutine(Attaking());
+
+    }
+
+    private void Update()
+    {
+        Debug.Log("Degat =" + Degat);
     }
 
     IEnumerator Attaking() 
@@ -33,6 +37,7 @@ public class Player_Attaque : NetworkBehaviour
         switch (NetPlayer.CurrentClass) 
         {
             case PlayerScriptable.PossibleClass.None: // si classe == None, impossible d'avoir d'arme
+                Debug.Log("Issue, no weapon with None class");
                 Destroy(this.gameObject); 
                 break;
 
@@ -51,16 +56,18 @@ public class Player_Attaque : NetworkBehaviour
             default: break;
         }
         yield return new WaitForSeconds(Delay);
-       // Debug.Log("Peut attaquer");
+        //Debug.Log("Peut attaquer");
         StartCoroutine(Attaking());
     }
 
     void MeleWeapon()
     {
-        
         if(Target != null)
         {
-            Target.GetComponent<IA_Network>().NetworkedLife -= Degat;
+            Target.GetComponent<IA_Network>().Rpc_AddPlayer(NetPlayer);
+            //Target.GetComponent<IA_Network>().Rpc_TakingDamage(Degat);
+            Target.GetComponent<IA_Network>().Rpc_Damage(Degat);
+            
         }
       //  Debug.Log(Target);
     }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6169953120763360204}
   - component: {fileID: 378099332710310890}
   - component: {fileID: 7357910138114088721}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,6 +141,7 @@ MonoBehaviour:
   IsAttacking: 0
   AttackTarget: []
   animator: {fileID: 0}
+  Damage: 0
 --- !u!1 &6916347208487237347
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,8 +156,8 @@ GameObject:
   - component: {fileID: 6792846529875204715}
   - component: {fileID: 3557299453132548568}
   - component: {fileID: 7724014416832566896}
-  - component: {fileID: 5640648483055375637}
-  m_Layer: 0
+  - component: {fileID: 5302212719082234037}
+  m_Layer: 8
   m_Name: Monster_Network
   m_TagString: Monster
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
@@ -197,13 +198,12 @@ MonoBehaviour:
   rb: {fileID: 0}
   StopDistance: 0.2
   DistanceLimite: 15
-  CanMove: 1
-  Retour: 0
-  IsPatrol: 0
   Mesh: {fileID: 0}
-  Target: {fileID: 0}
+  Target: {x: 0, y: 0, z: 0}
   animator: {fileID: 0}
-  SpawnPoint: {x: 0, y: 0, z: 0}
+  _SpawnPoint: {x: 0, y: 0, z: 0}
+  _PatrolPoint: {x: 0, y: 0, z: 0}
+  ActualState: 0
 --- !u!114 &8435089366390472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,7 +218,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScriptableRef: {fileID: 11400000, guid: 281f648f9747b5b4d9643f8024d5e032, type: 2}
   EnnemisScriptableClone: {fileID: 0}
+  AttaqueScript: {fileID: 5012284696859478006}
+  DetectionScript: {fileID: 7357910138114088721}
   _NetworkedLife: 0
+  _Gold: 0
+  _Xp: 0
+  _PlayerGonnaHaveLoot:
+    _items: []
+  NumberOfPlayers: 0
+  LastPlayer: {fileID: 0}
 --- !u!114 &6792846529875204715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,12 +241,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SortKey: 1723783597
   ObjectInterest: 1
-  Flags: 262145
+  Flags: 524289
   NestedObjects: []
   NetworkedBehaviours:
   - {fileID: 7297463361303888474}
   - {fileID: 8435089366390472}
-  - {fileID: 5640648483055375637}
+  - {fileID: 5302212719082234037}
 --- !u!136 &3557299453132548568
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -289,7 +297,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &5640648483055375637
+--- !u!114 &5302212719082234037
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -298,6 +306,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6916347208487237347}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 2038946961, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SyncScale: 0
+  SyncParent: 1
+  _autoAOIOverride: 1
+  DisableSharedModeInterpolation: 0

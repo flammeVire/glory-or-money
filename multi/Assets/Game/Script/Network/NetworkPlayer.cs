@@ -47,6 +47,7 @@ public class Network_Player : NetworkBehaviour, IDespawned
     public Game_Network NetGame;
     Player_UI_Manager UIManager;
     public PowerUp PlayerPowerup;
+    public Player_Attaque AttaqueScript = null;
 
     #endregion
     #region Boolean
@@ -57,8 +58,7 @@ public class Network_Player : NetworkBehaviour, IDespawned
     public bool UsingSpell2 = false;
     public bool UsingSpell3 = false;
     public bool IsInterracting = false;
-
-   
+    public bool IsAGhost;
 
     #endregion
     #region input
@@ -83,9 +83,9 @@ public class Network_Player : NetworkBehaviour, IDespawned
     [Networked] public float CurrentXP { get; set; }
     [Networked] public int CurrentGold { get; set; }
     [Networked] public int TotalGold { get; set; }
-
+    [Networked] public float Speed {  get; set; }
     [Networked] public bool IsReady { get; set; }
-
+    [Networked] public float maxHp { get; set; }
     #endregion
 
     #endregion
@@ -108,7 +108,7 @@ public class Network_Player : NetworkBehaviour, IDespawned
 
             UIManager.Instantiate_Gold_Panel();
             Player_Gold_Panel.GetComponent<Player_Gold>().SetGoldToZero();
-
+           
 
             PlayerName = SpawnName;
             if(PlayerName == "")
@@ -143,7 +143,7 @@ public class Network_Player : NetworkBehaviour, IDespawned
         InputInterracting();
         TestDeNiveauASuppr(); // ajoute lvl quand Y appuyer
         //Debug.Log("vie restante de " + gameObject.name + " == " + PlayerScriptableClone.Life);
-
+        Debug.Log("or in current : " + CurrentGold);
         //Debug.Log("Is ready == " + IsReady);
     }
 
@@ -222,6 +222,8 @@ public class Network_Player : NetworkBehaviour, IDespawned
     }
 
 
+
+
     #endregion
 
     #region Gestion de Niveau
@@ -280,9 +282,10 @@ public class Network_Player : NetworkBehaviour, IDespawned
             default:
                 break;
         }
-    
-        
-    
+        if (Player_Score_Panel != null)
+        {
+            Player_Score_Panel.GetComponent<Player_Score>().ChangeScore();
+        }
     }
 
     void TestDeNiveauASuppr()
@@ -293,7 +296,6 @@ public class Network_Player : NetworkBehaviour, IDespawned
             CurrentXP += 1;
             PlayerScore += 1;
             NetGame.Rpc_BestPlayerScore();
-            Player_Score_Panel.GetComponent<Player_Score>().ChangeScore();
             MonterDeNiveau();
         }
 
@@ -309,6 +311,8 @@ public class Network_Player : NetworkBehaviour, IDespawned
             
         }
 
+       
+        
        
     }
 
@@ -336,7 +340,7 @@ public class Network_Player : NetworkBehaviour, IDespawned
         {
 
             case PlayerScriptable.PossibleClass.None:
-
+                IsAGhost = true;
                 PlayerMesh = Runner.Spawn(MeshNone, this.transform.position, this.transform.rotation, Runner.LocalPlayer, BeforeSpawned);
                 break;
 
@@ -363,10 +367,12 @@ public class Network_Player : NetworkBehaviour, IDespawned
             default: break;
         }
         PlayerScriptableClone.ChangeStat(newClass);
+        maxHp = PlayerScriptableClone.Life;
 
 
         if (CurrentClass != PlayerScriptable.PossibleClass.None)
         {
+            IsAGhost = false;
             if (UIManager.Stat_PanelClone != null)
             {
                 Debug.Log("Destroy stat panel");
@@ -385,8 +391,10 @@ public class Network_Player : NetworkBehaviour, IDespawned
             }
 
         }
-        
+        Speed = PlayerScriptableClone.Speed;
         Player_Spell_Panel.GetComponent<Player_Spell>().SetTimer();
+        AttaqueScript = GetComponentInChildren<Player_Attaque>();
+
         Debug.Log("le nouveau current mesh est " + PlayerMesh);
         
     }
@@ -407,13 +415,20 @@ public class Network_Player : NetworkBehaviour, IDespawned
 
     public void SetMaxGold()
     {
-        Player_Gold_Panel.GetComponent<Player_Gold>().AddGold();
+        Debug.Log("MaxGoldSetting");
         if (CurrentGold > 5)
         {
             CurrentGold = 5;
             Debug.Log("Max Moulaga atteins");
         }
+        if (Player_Gold_Panel != null)
+        {
+            Player_Gold_Panel.GetComponent<Player_Gold>().AddGold();
+        }
     }
+
+    
+
     
     public void GoldToBank()
     {
@@ -486,5 +501,113 @@ public class Network_Player : NetworkBehaviour, IDespawned
     {
         PlayerNameUI.text = Name;
     }
-   #endregion
+    #endregion
+
+    #region modifier Stat
+
+    #region Speed
+    [Rpc(RpcSources.All, RpcTargets.All)]
+    public void Rpc_SpeedModifier(float NewSpeed)
+    {
+        Speed = NewSpeed;
+    }
+
+    [Rpc(RpcSources.All,RpcTargets.All)]
+    public void Rpc_SpeedCooldown() 
+    {
+        Debug.Log("Start coroutine (speedReset)");
+        if (HasInputAuthority)
+        {
+            StartCoroutine(SpeedReset());
+        }
+    }
+
+    IEnumerator SpeedReset()
+    {
+        yield return new WaitForSeconds(2.5f);
+        Debug.Log("ResetSpeed");
+        if (PlayerScriptableClone != null)
+        {
+            Speed = PlayerScriptableClone.Speed;
+        }
+    }
+    #endregion
+    #region Attack
+    [Rpc(RpcSources.All, RpcTargets.All)]
+    public void Rpc_AttackModifier(float multiply, float delay)
+    {
+        if (HasStateAuthority)
+        {
+            AttaqueScript.Degat *= multiply;
+        }
+        StartCoroutine(AttackReset(delay));
+        
+    }
+    IEnumerator AttackReset(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Debug.Log("ResetSpeed");
+        if (PlayerScriptableClone != null)
+        {
+            AttaqueScript.Degat = PlayerScriptableClone.Degat;
+        }
+    }
+
+    #endregion
+    #region Life
+    [Rpc(RpcSources.All, RpcTargets.All)]
+    public void Rpc_LifeModifier(float add,float delay)
+    {
+        if (HasInputAuthority)
+        {
+            PlayerScriptableClone.Life += add;
+            maxHp += add;
+            UIManager.Stat_PanelClone.GetComponent<Player_Stat>().MaxHealth = maxHp;
+        }
+        StartCoroutine(LifeReset(add,delay));
+
+    }
+    IEnumerator LifeReset(float add,float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Debug.Log("ResetLife");
+        if (PlayerScriptableClone != null)
+        {
+            PlayerScriptableClone.Life -= add;
+            maxHp -= add;
+            UIManager.Stat_PanelClone.GetComponent<Player_Stat>().MaxHealth = maxHp;
+        }
+    }
+
+
+    #endregion
+
+    #endregion
+
+    #region healing
+
+   public void healing(float PV_restored)
+    {
+        if (PlayerScriptableClone.Life < maxHp)
+        {
+            PlayerScriptableClone.Life += PV_restored;
+            
+        }
+        else
+        {
+            CheckLimitePv();
+        }
+    
+    }
+
+    void CheckLimitePv()
+    {
+        if(PlayerScriptableClone.Life >= maxHp)
+        {
+            PlayerScriptableClone.Life = maxHp;
+        }
+    }
+    
+
+    #endregion
 }

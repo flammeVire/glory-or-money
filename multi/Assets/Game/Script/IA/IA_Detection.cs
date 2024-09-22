@@ -1,8 +1,10 @@
+using Fusion;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class IA_Detection : MonoBehaviour
 {
@@ -39,12 +41,12 @@ public class IA_Detection : MonoBehaviour
         }
     }
 
-    void ListAdd(GameObject Target)
+   public void ListAdd(GameObject Target)
     {
         TargetList.Add(Target);
         CurrentTarget = TargetList[0];
     }
-    void ListRemover(GameObject Target)
+   public void ListRemover(GameObject Target)
     {
         TargetList.Remove(Target);
         if(TargetList.Count >= 0 )
@@ -81,5 +83,20 @@ public class IA_Detection : MonoBehaviour
             return null;
         }
        
+    }
+
+    [Rpc(RpcSources.All,RpcTargets.All)]
+    public void Rpc_DisparitionOfPlayer(GameObject Target)
+    {
+        ListRemover(Target);
+        Debug.Log("IsDisapear");
+        StartCoroutine(Reaparition(Target));
+    }
+
+    IEnumerator Reaparition(GameObject target)
+    {
+        yield return new WaitForSeconds(1);
+        Debug.Log("IsReapear");
+        ListAdd(target);
     }
 }

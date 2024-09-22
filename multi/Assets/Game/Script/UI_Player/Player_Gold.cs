@@ -25,29 +25,19 @@ public class Player_Gold : MonoBehaviour
 
     public void AddGold()
     {
-        for (int i = 0; i <= GoldUI.Length; i++)
+        for (int i = 0; i < GoldUI.Length; i++) 
         {
-            /*
-         if (GoldUI[i - 1].activeSelf)
-         {
-                Debug.Log("GoldUI" + GoldUI[i-1] + " Est actif");
-                return;
-
-            }
-            */
-
-
-            if(NetPlayer.CurrentGold == i)
+            if (NetPlayer.CurrentGold >= i + 1) 
             {
-                Debug.Log("GoldUI" + GoldUI[i - 1] + " Est now actif");
-                GoldUI[i-1].SetActive(true);
+                Debug.Log("GoldUI" + i + " est maintenant actif");
+
+
+                if (!GoldUI[i].activeSelf) 
+                {
+                    GoldUI[i].SetActive(true);
+                }
             }
-            
-
-
         }
-        
+
     }
-
-
 }

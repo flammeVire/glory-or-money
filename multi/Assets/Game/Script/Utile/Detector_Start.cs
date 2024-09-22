@@ -40,7 +40,7 @@ public class Detector_Start : MonoBehaviour
                 if (other.gameObject == CurrentPlayerInBox[i].gameObject)
                 {
                     CurrentPlayerInBox[i].GetComponent<Network_Player>().IsReady = false;
-                    if (NetPlayer.Player_CanvaClone != null)
+                    if (NetPlayer.Player_CanvaClone != null && NetPlayer.GetComponent<Network_Player>().Player_CanvaClone.GetComponent<Player_UI_Manager>().Ready_ButtonClone != null)
                     {
                         Destroy(CurrentPlayerInBox[i].gameObject.GetComponent<Network_Player>().Player_CanvaClone.GetComponent<Player_UI_Manager>().Ready_ButtonClone);
                     }

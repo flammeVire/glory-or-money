@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a747ef80eb341e4c992b5c478314edc, type: 3}
   m_Name: Ennemis_Scriptable
   m_EditorClassIdentifier: 
-  Life: 5
-  Speed: 0.8
-  Degat: 6
+  Life: 45
+  Speed: 0.4
+  Degat: 12
   MonsterType: 0
-  XpLoot: 4.3975277
-  GoldLoot: 2.8188124
+  XpLoot: 12.000001
+  GoldLoot: 1.6
   DelayAttack: 2
-  OG_Life: 5
-  OG_Speed: 0.8
-  OG_Degat: 6
-  MinXp: 1
-  MaxXp: 5
-  MinOr: 1
-  MaxOr: 10
+  OG_Life: 45
+  OG_Speed: 0.4
+  OG_Degat: 12
+  MinXp: 12
+  MaxXp: 12
+  MinOr: 1.6
+  MaxOr: 1.6
