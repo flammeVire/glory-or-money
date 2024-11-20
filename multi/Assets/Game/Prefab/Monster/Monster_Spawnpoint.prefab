@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8edd6d887764dd43858691a6115ea74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IANetwork_Prefab: {fileID: 3587266213474538799, guid: 085e91cd64aaa264ea5c44d81334287b, type: 3}
+  IANetwork_Prefab: {fileID: 5596868116815092396, guid: 799a31eedc8d8974caf3cfc16b8d8022, type: 3}
 --- !u!114 &205699265688765548
 MonoBehaviour:
   m_ObjectHideFlags: 0

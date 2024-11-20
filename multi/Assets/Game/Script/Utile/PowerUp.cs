@@ -12,7 +12,13 @@ public class PowerUp : NetworkBehaviour
     [SerializeField] float DelayWarriorTank;
     [SerializeField] float DelayWarriorRage;
     [SerializeField] NetworkObject HealingCircleObj;
-    
+    [SerializeField] NetworkObject BearTrapObj;
+    NetworkObject OldBearTrap;
+    [SerializeField] NetworkObject Explosif;
+    NetworkObject OldExplosif;
+
+    [SerializeField] NetworkObject SmokeObj;
+    [SerializeField] NetworkObject PoisonObj;
     RaycastHit[] hits;
     public LayerMask PlayerLayer;
     public LayerMask MonsterLayer;
@@ -77,13 +83,13 @@ public class PowerUp : NetworkBehaviour
                 switch (SpellNumber)
                 {
                     case 1:
-
+                        QuickShot();
                         break;
                     case 2:
-
+                        BearTrap();
                         break;
                     case 3:
-
+                        PoisonCloud();
                         break;
 
                     default:
@@ -94,13 +100,13 @@ public class PowerUp : NetworkBehaviour
                 switch (SpellNumber)
                 {
                     case 1:
-
+                        Smoke();
                         break;
                     case 2:
-
+                        QuickBank();
                         break;
                     case 3:
-
+                        ExplodingBarrel();
                         break;
 
                     default:
@@ -158,8 +164,7 @@ public class PowerUp : NetworkBehaviour
             {
                 GameObject hitObject = hit.collider.gameObject;
                 Network_Player NetPlayer = hitObject.GetComponent<Network_Player>();
-                NetPlayer.Rpc_SpeedModifier(NetPlayer.Speed / 3);
-                NetPlayer.Rpc_SpeedCooldown();
+                NetPlayer.Rpc_SpeedModifier(NetPlayer.Speed / 3,2.5f);
                 Debug.Log("Touched: " + hitObject.name);
             }
 
@@ -239,9 +244,59 @@ public class PowerUp : NetworkBehaviour
     #endregion
     #region Ranger Spell
 
+    //QuickShot (Spell1) permet au joueur de ne pas avoir de delay d'arme  
+    void QuickShot()
+    {
+        Debug.Log("QuickShot");
+        NetPlayer = this.GetComponent<Network_Player>();
+        NetPlayer.Rpc_DelayModifier(0);
+    }
+
+    //BearTrap (Spell2) fait apparaitre un piege a ours devant le joueur qui empeche le movement pendant quelque secondes
+    void BearTrap()
+    {
+        if(OldBearTrap != null)
+        {
+            Runner.Despawn(OldBearTrap);
+        }
+        Vector3 spawnPosition = transform.position + transform.forward;
+        OldBearTrap = Runner.Spawn(BearTrapObj, spawnPosition);
+    }
+
+    //PoisonCloud (Spell3) fait apparaitre un nuage toxique qui inflige des dégâts dans le temps
+    void PoisonCloud()
+    {
+        Vector3 spawnPosition = transform.position + transform.forward;
+        NetworkObject obj = Runner.Spawn(PoisonObj,spawnPosition);
+        obj.GetComponent<PoisonCloud>().Rpc_SetPlayerAuthority(Object);
+    }
     #endregion
     #region Rogue Spell
 
+    //Smoke (Spell1) fait apparaitre un nuage de fumé sur le joueur
+    void Smoke()
+    {
+        Runner.Spawn(SmokeObj,transform.position);
+    }
+
+    //QuickBank (Spell2) met l'or du joueur en bank immédiatement
+    void QuickBank()
+    {
+        NetPlayer = this.GetComponent<Network_Player>();
+        NetPlayer.GoldToBank();
+    }
+
+
+    //ExplodingBarrel (Spell3) fait apparaitre un tonneau explosif qui inflige des degat a tout les entité au alentour
+    void ExplodingBarrel()
+    {
+        if(OldExplosif != null)
+        {
+            Runner.Despawn(OldExplosif);
+        }
+        Vector3 spawnPosition = transform.position + transform.forward;
+        OldExplosif = Runner.Spawn(Explosif, spawnPosition);
+    }
     #endregion
     #region Mage Spell
 

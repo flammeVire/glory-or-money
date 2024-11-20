@@ -242,7 +242,7 @@ public class IA_Mouvement_WalkToward : NetworkBehaviour
         if (distance > StopDistance)
         {
             Vector3 directionOfTravel = (TargetPosition - currentPosition).normalized;
-            Vector3 newPosition = currentPosition + (directionOfTravel * NetIA.EnnemisScriptableClone.Speed * Runner.DeltaTime);
+            Vector3 newPosition = currentPosition + (directionOfTravel * NetIA.Speed * Runner.DeltaTime);
 
             rb.MovePosition(newPosition);
         }

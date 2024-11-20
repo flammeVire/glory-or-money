@@ -18,6 +18,7 @@ public class IA_Network : NetworkBehaviour
     [Networked] public NetworkDictionary<int, Network_Player> PlayerGonnaHaveLoot => default;
     public int NumberOfPlayers = 0;
     public Network_Player LastPlayer;
+    public float Speed;
 
     public override void Spawned()
     {
@@ -27,7 +28,7 @@ public class IA_Network : NetworkBehaviour
         NetworkedLife = EnnemisScriptableClone.Life;
         Gold = EnnemisScriptableClone.GoldLoot;
         Xp = EnnemisScriptableClone.XpLoot;
-       
+        Speed = EnnemisScriptableClone.Speed;
 
     }
     
@@ -117,11 +118,15 @@ public class IA_Network : NetworkBehaviour
     {
         Debug.Log("general looting");
         Debug.Log("HowManyPlayerInList at dead" + PlayerGonnaHaveLoot.Count);
-        Debug.Log("Kill by " + LastPlayer.PlayerName);
 
-        PlayerLootManagement();
-        DistributeGold();
-        DistributeXP();
+        
+        if (PlayerGonnaHaveLoot.Count > 0)
+        {
+            PlayerLootManagement();
+            DistributeGold();
+            DistributeXP();
+        }
+        
 
     }
 
@@ -207,12 +212,6 @@ public class IA_Network : NetworkBehaviour
 
     }
 
-
-
-
-
-
-
     void DistributeXP()
     {
         Debug.Log("Distrubution Xp");
@@ -224,9 +223,6 @@ public class IA_Network : NetworkBehaviour
             player.Value.NetGame.Rpc_BestPlayerScore();
         }
     }
-
-
-    
 
    
     #endregion
@@ -268,6 +264,22 @@ public class IA_Network : NetworkBehaviour
         {
             Debug.Log("TRSP add for player" + Runner.LocalPlayer);
             Object.AddComponent<NetworkTransform>();
+        }
+    }
+
+    [Rpc(RpcSources.All,RpcTargets.All)]
+    public void Rpc_SpeedModifier(float newSpeed, float delay)
+    {
+        Speed = newSpeed;
+        StartCoroutine(SpeedReset(delay));
+    }
+
+    IEnumerator SpeedReset(float Delay)
+    {
+        yield return new WaitForSeconds(3);
+        if(EnnemisScriptableClone!=null)
+        {
+            Speed = EnnemisScriptableClone.Speed;
         }
     }
 

@@ -52,8 +52,9 @@ public class Network_Player : NetworkBehaviour, IDespawned
     #endregion
     #region Boolean
     [Header("Boolean")]
-    public bool IsAttaking = false;
     public bool IsLooking;
+    [Networked]public NetworkBool IsAttaking { get; set; } = false;
+    
     public bool UsingSpell1 = false;
     public bool UsingSpell2 = false;
     public bool UsingSpell3 = false;
@@ -143,7 +144,7 @@ public class Network_Player : NetworkBehaviour, IDespawned
         InputInterracting();
         TestDeNiveauASuppr(); // ajoute lvl quand Y appuyer
         //Debug.Log("vie restante de " + gameObject.name + " == " + PlayerScriptableClone.Life);
-        Debug.Log("or in current : " + CurrentGold);
+        //Debug.Log("or in current : " + CurrentGold);
         //Debug.Log("Is ready == " + IsReady);
     }
 
@@ -507,24 +508,17 @@ public class Network_Player : NetworkBehaviour, IDespawned
 
     #region Speed
     [Rpc(RpcSources.All, RpcTargets.All)]
-    public void Rpc_SpeedModifier(float NewSpeed)
+    public void Rpc_SpeedModifier(float NewSpeed,float delay)
     {
+        
         Speed = NewSpeed;
+        StartCoroutine(SpeedReset(delay));
     }
 
-    [Rpc(RpcSources.All,RpcTargets.All)]
-    public void Rpc_SpeedCooldown() 
-    {
-        Debug.Log("Start coroutine (speedReset)");
-        if (HasInputAuthority)
-        {
-            StartCoroutine(SpeedReset());
-        }
-    }
 
-    IEnumerator SpeedReset()
+    IEnumerator SpeedReset(float delay)
     {
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(delay);
         Debug.Log("ResetSpeed");
         if (PlayerScriptableClone != null)
         {
@@ -581,12 +575,32 @@ public class Network_Player : NetworkBehaviour, IDespawned
 
 
     #endregion
+    #region Delay
+    [Rpc(RpcSources.All, RpcTargets.All)]
+    public void Rpc_DelayModifier(float delay)
+    {
+        if (HasStateAuthority)
+        {
+            AttaqueScript.Delay = delay;
+        }
+        StartCoroutine(DelayReset());
 
+    }
+    IEnumerator DelayReset()
+    {
+        yield return new WaitForSeconds(2);
+        Debug.Log("ResetSpeed");
+        if (PlayerScriptableClone != null)
+        {
+            AttaqueScript.Delay = PlayerScriptableClone.DelayWeapon;
+        }
+    }
+    #endregion
     #endregion
 
     #region healing
 
-   public void healing(float PV_restored)
+    public void healing(float PV_restored)
     {
         if (PlayerScriptableClone.Life < maxHp)
         {

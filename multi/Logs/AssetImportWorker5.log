@@ -1,0 +1,545 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.4f1 (35713cd46cd7) revision 3502396'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'fr' Physical Memory: 8029 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+E:\unity\2022.3.4f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker5
+-projectPath
+E:/unity/glory-or-money/multi
+-logFile
+Logs/AssetImportWorker5.log
+-srvPort
+55387
+Successfully changed project path to: E:/unity/glory-or-money/multi
+E:/unity/glory-or-money/multi
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [1652] Host "[IP] 192.168.1.24 [Port] 0 [Flags] 2 [Guid] 1052974488 [EditorId] 1052974488 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-72UL8GNE) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [1652] Host "[IP] 192.168.1.24 [Port] 0 [Flags] 2 [Guid] 1052974488 [EditorId] 1052974488 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-72UL8GNE) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 2933.46 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.4f1 (35713cd46cd7)
+[Subsystems] Discovering subsystems at path E:/unity/2022.3.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/unity/glory-or-money/multi/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f91)
+    Vendor:   NVIDIA
+    VRAM:     3935 MB
+    Driver:   32.0.15.6081
+Initialize mono
+Mono path[0] = 'E:/unity/2022.3.4f1/Editor/Data/Managed'
+Mono path[1] = 'E:/unity/2022.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'E:/unity/2022.3.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56004
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/unity/2022.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.079971 seconds.
+- Loaded All Assemblies, in  3.782 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.522 seconds
+Domain Reload Profiling: 5303ms
+	BeginReloadAssembly (2329ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (3ms)
+	RebuildCommonClasses (272ms)
+	RebuildNativeTypeToScriptingClass (36ms)
+	initialDomainReloadingComplete (301ms)
+	LoadAllAssembliesAndSetupDomain (842ms)
+		LoadAssemblies (2325ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (828ms)
+			TypeCache.Refresh (826ms)
+				TypeCache.ScanAssembly (775ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1522ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1282ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (49ms)
+			SetLoadedEditorAssemblies (28ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (9ms)
+			ProcessInitializeOnLoadAttributes (822ms)
+			ProcessInitializeOnLoadMethodAttributes (374ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\unity\glory-or-money\multi\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\glory-or-money\multi\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 10.870 seconds
+Refreshing native plugins compatible for Editor in 358.23 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.154 seconds
+Domain Reload Profiling: 14018ms
+	BeginReloadAssembly (2017ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (25ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (84ms)
+	RebuildCommonClasses (95ms)
+	RebuildNativeTypeToScriptingClass (41ms)
+	initialDomainReloadingComplete (559ms)
+	LoadAllAssembliesAndSetupDomain (8148ms)
+		LoadAssemblies (8364ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1512ms)
+			TypeCache.Refresh (1379ms)
+				TypeCache.ScanAssembly (1261ms)
+			ScanForSourceGeneratedMonoScriptInfo (104ms)
+			ResolveRequiredComponents (29ms)
+	FinalizeReload (3157ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2655ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (24ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (278ms)
+			ProcessInitializeOnLoadAttributes (2282ms)
+			ProcessInitializeOnLoadMethodAttributes (51ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.38 seconds
+Refreshing native plugins compatible for Editor in 339.88 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3261 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (75.9 KB). Loaded Objects now: 3732.
+Memory consumption went from 140.8 MB to 140.7 MB.
+Total: 13.243300 ms (FindLiveObjects: 0.457700 ms CreateObjectMapping: 1.352900 ms MarkObjects: 10.732000 ms  DeleteObjects: 0.697900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:FusionILWeaverTriggerImporter/ConfigHash: b0b173a93bb19085723cb3d421b3a13b -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1612862.385460 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.blend
+  artifactKey: Guid(4dc0275fa13246842b0554f4a347c615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.blend using Guid(4dc0275fa13246842b0554f4a347c615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a80f1f39e8f1f9a7981539eb4993c0b') in 2.006273 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 189
+========================================================================
+Received Import Request.
+  Time since last request: 1276.608531 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Material/Ecorce.mat
+  artifactKey: Guid(befbc8cdc7d333246a334dec8cf543e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Material/Ecorce.mat using Guid(befbc8cdc7d333246a334dec8cf543e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48b58cd489001d89785dec293ed59ca7') in 0.430109 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Material/Mud.mat
+  artifactKey: Guid(21ca33aa448fa8e4a9fe74db1f14617f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Material/Mud.mat using Guid(21ca33aa448fa8e4a9fe74db1f14617f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd5ac07eb76f4245a8405c3974e15e00') in 0.046838 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 6754.014318 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/Normal-Wood.png
+  artifactKey: Guid(ee7c6f918724ea447aafcb5a980bf46b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/Normal-Wood.png using Guid(ee7c6f918724ea447aafcb5a980bf46b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f19ebe6adc0b91983d8a8efab551551') in 0.827062 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 43.932134 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/Mud.png
+  artifactKey: Guid(b61e176da89729e46a379e2087ba61b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/Mud.png using Guid(b61e176da89729e46a379e2087ba61b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a987cde3ff941cc9f9c5b9712a247fe') in 0.067011 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/Wood.png
+  artifactKey: Guid(4c2177086581b9d4785f3120c4f38255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/Wood.png using Guid(4c2177086581b9d4785f3120c4f38255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03ddb98dcaf884f2f0d83b6902d15786') in 0.043970 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 43.825412 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/cloth.png
+  artifactKey: Guid(f5d8a0f353cc7834cbca52064a398dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/cloth.png using Guid(f5d8a0f353cc7834cbca52064a398dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfe3e4a8bf027c1b4c118f625a6ef1a4') in 0.029962 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Mud.png
+  artifactKey: Guid(c615c6280ea3b064c80ce345a56eb17b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Mud.png using Guid(c615c6280ea3b064c80ce345a56eb17b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '358d2850f55355e27c1514d674c148dd') in 0.023999 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Normal-Cloth.png
+  artifactKey: Guid(250948693de98e94dad737ab3a3aebee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Normal-Cloth.png using Guid(250948693de98e94dad737ab3a3aebee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0306360f32377a9c082c26bcadf25ea0') in 0.023357 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Normal-Wood.png
+  artifactKey: Guid(702b8809e6460e546943b7e79c3391a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Normal-Wood.png using Guid(702b8809e6460e546943b7e79c3391a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c671fe66894a2227a531b0c063cb77e') in 0.020207 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Wood.png
+  artifactKey: Guid(f6fcf8845a1452b4c803211d11ad43f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Wood.png using Guid(f6fcf8845a1452b4c803211d11ad43f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e1be93bcbaa5eb35d7a3d1e141351aa') in 0.018734 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Normal_Mud.png
+  artifactKey: Guid(c0108843ea3718541a43a2a1f7dd87c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Normal_Mud.png using Guid(c0108843ea3718541a43a2a1f7dd87c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69923534e871f012e1fff8b9292f1fdc') in 0.020072 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 6.268898 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Normal-Wood.png
+  artifactKey: Guid(702b8809e6460e546943b7e79c3391a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Normal-Wood.png using Guid(702b8809e6460e546943b7e79c3391a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7218c85a0e21a0a618dc02dd3d56be8d') in 0.153530 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Normal_Mud.png
+  artifactKey: Guid(c0108843ea3718541a43a2a1f7dd87c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Normal_Mud.png using Guid(c0108843ea3718541a43a2a1f7dd87c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79d469102814c0047224edeea8ca6940') in 0.025093 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 141.915043 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/Mud.png
+  artifactKey: Guid(10e261e15b916f64c82be55c4dc571c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/Mud.png using Guid(10e261e15b916f64c82be55c4dc571c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e59823f742ce5b1dde2bf841e2fb9324') in 0.026995 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/Normal-Cloth.png
+  artifactKey: Guid(8977fa265f2efd3409d97ebd86c8004c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/Normal-Cloth.png using Guid(8977fa265f2efd3409d97ebd86c8004c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae761808702813c3a2cc1aa480dfba8f') in 0.023242 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/Wood.png
+  artifactKey: Guid(87fb95ed271a5d546b98cfc01cc2de46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/Wood.png using Guid(87fb95ed271a5d546b98cfc01cc2de46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fb4dd7f6e27d9680a44ed1fe6902c56') in 0.017778 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 175.298364 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Material/mushroom_foot.mat
+  artifactKey: Guid(485847bd2b37f3442847931336122b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Material/mushroom_foot.mat using Guid(485847bd2b37f3442847931336122b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '801ffba654b13b77bec38cd62a81cc78') in 0.423640 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1664.071038 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/mushroom2.png
+  artifactKey: Guid(bedb10078763ae046bca499f1fff482c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/mushroom2.png using Guid(bedb10078763ae046bca499f1fff482c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1eebb35c9feb80054c0d56b9c3177af') in 0.072425 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/MushroomFeet.png
+  artifactKey: Guid(6a7519cd70195514caa47a7c9d0125a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/MushroomFeet.png using Guid(6a7519cd70195514caa47a7c9d0125a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ce220f2ea5d800582bd8e77ed7cdd1f') in 0.024640 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 10.346469 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Material/Mushroom_Top1.mat
+  artifactKey: Guid(0dfa351fdf0f5d74c818b0a58e9b5773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Material/Mushroom_Top1.mat using Guid(0dfa351fdf0f5d74c818b0a58e9b5773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4b410d3e52e0c353160d18658dba11d') in 0.354768 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 24.37 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 3782.
+Memory consumption went from 92.4 MB to 92.4 MB.
+Total: 227.617200 ms (FindLiveObjects: 0.422900 ms CreateObjectMapping: 0.323900 ms MarkObjects: 226.718000 ms  DeleteObjects: 0.150600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:FusionILWeaverTriggerImporter/ConfigHash: b0b173a93bb19085723cb3d421b3a13b -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:Fusion.PrefabsDependency: 524a2cbaa578ecd68f58adfbb0044dff -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 358.473206 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Slime.fbx
+  artifactKey: Guid(98b6b5acb733a7d40978488a64fb9392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Slime.fbx using Guid(98b6b5acb733a7d40978488a64fb9392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28776af610255271286ffdb8c968a7cd') in 0.296171 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 37
+========================================================================
+Received Import Request.
+  Time since last request: 409.427555 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/Mud.png
+  artifactKey: Guid(28ae806cf7835be4ba2fb1e28dbd9305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/Mud.png using Guid(28ae806cf7835be4ba2fb1e28dbd9305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74b2a6e2ab89b86c1806832447a98de0') in 0.027563 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/MushroomFeet.png
+  artifactKey: Guid(81c0d76587223dc42b3c4a94961d4607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/MushroomFeet.png using Guid(81c0d76587223dc42b3c4a94961d4607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67302024e9d394fcd8a650a45e585352') in 0.025017 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/Normal_Mud.png
+  artifactKey: Guid(a7e8e88f238faa142b1be67b031f1065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/Normal_Mud.png using Guid(a7e8e88f238faa142b1be67b031f1065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b764270f3694d76bec89c5e8b1c4b821') in 0.024355 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/Normal-Cloth.png
+  artifactKey: Guid(66606c1eeec838d4ebdb52492f29efe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/Normal-Cloth.png using Guid(66606c1eeec838d4ebdb52492f29efe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d52b6eef44d3ccd1851a186e6bdf2f9') in 0.030643 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 66.554885 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Material/Ecorce.mat
+  artifactKey: Guid(befbc8cdc7d333246a334dec8cf543e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Material/Ecorce.mat using Guid(befbc8cdc7d333246a334dec8cf543e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7425d25b076ef04fc1191323d7d48911') in 0.191361 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Material/Mushroom_top2.mat
+  artifactKey: Guid(78df9f7e9b3c90d4693a221792a261e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Material/Mushroom_top2.mat using Guid(78df9f7e9b3c90d4693a221792a261e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2182915893c2a0362240a0fd6c187d3a') in 0.055225 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 16.44 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 3782.
+Memory consumption went from 92.5 MB to 92.5 MB.
+Total: 89.744000 ms (FindLiveObjects: 0.703400 ms CreateObjectMapping: 0.397100 ms MarkObjects: 88.619300 ms  DeleteObjects: 0.022700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:FusionILWeaverTriggerImporter/ConfigHash: b0b173a93bb19085723cb3d421b3a13b -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:Fusion.PrefabsDependency: 36a5de934d07ecf48db78e480319ed1a -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 13.29 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 3782.
+Memory consumption went from 92.5 MB to 92.5 MB.
+Total: 3.610200 ms (FindLiveObjects: 0.309400 ms CreateObjectMapping: 0.265900 ms MarkObjects: 3.023800 ms  DeleteObjects: 0.010100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:FusionILWeaverTriggerImporter/ConfigHash: b0b173a93bb19085723cb3d421b3a13b -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:Fusion.PrefabsDependency: f3987c9f5757d6d5accf275a79dc3236 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\unity\glory-or-money\multi\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\glory-or-money\multi\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 10.684 seconds
+Refreshing native plugins compatible for Editor in 168.88 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 25.120 seconds
+Domain Reload Profiling: 35803ms
+	BeginReloadAssembly (1229ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (43ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (640ms)
+	RebuildCommonClasses (109ms)
+	RebuildNativeTypeToScriptingClass (32ms)
+	initialDomainReloadingComplete (118ms)
+	LoadAllAssembliesAndSetupDomain (9193ms)
+		LoadAssemblies (7825ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1727ms)
+			TypeCache.Refresh (1713ms)
+				TypeCache.ScanAssembly (1413ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (25122ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1408ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (13ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (296ms)
+			ProcessInitializeOnLoadAttributes (1015ms)
+			ProcessInitializeOnLoadMethodAttributes (65ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (31ms)
+Refreshing native plugins compatible for Editor in 293.90 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3239 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 59 unused Assets / (48.9 KB). Loaded Objects now: 3784.
+Memory consumption went from 142.7 MB to 142.7 MB.
+Total: 11.388000 ms (FindLiveObjects: 0.492400 ms CreateObjectMapping: 0.381300 ms MarkObjects: 10.265500 ms  DeleteObjects: 0.247100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:FusionILWeaverTriggerImporter/ConfigHash: b0b173a93bb19085723cb3d421b3a13b -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:Fusion.PrefabsDependency: f3987c9f5757d6d5accf275a79dc3236 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

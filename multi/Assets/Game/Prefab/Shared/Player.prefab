@@ -254,6 +254,7 @@ GameObject:
   - component: {fileID: 838010795142817513}
   - component: {fileID: 8992978071960981945}
   - component: {fileID: 1629036520004727618}
+  - component: {fileID: -6649769616880321477}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -462,6 +463,7 @@ MonoBehaviour:
   _TotalGold: 0
   _Speed: 0
   _IsReady: 0
+  _maxHp: 0
 --- !u!114 &8992978071960981945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,6 +495,10 @@ MonoBehaviour:
   DelayWarriorTank: 5
   DelayWarriorRage: 3
   HealingCircleObj: {fileID: 6248825872153961669, guid: 449d7ec2c91950147b9be6ad5d162d0c, type: 3}
+  BearTrapObj: {fileID: 2084027160449317720, guid: b8b694271ed008749aa9c75ce871c4ae, type: 3}
+  Explosif: {fileID: 7569135690263122449, guid: 5565b54d77f011048b9c5daeac7e3c2f, type: 3}
+  SmokeObj: {fileID: -5520409910396400372, guid: 834d180c449bc3e4a9ebd038b6d85af8, type: 3}
+  PoisonObj: {fileID: -5520409910396400372, guid: 011c02365ab8f6c488f46998f622b679, type: 3}
   PlayerLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -502,3 +508,30 @@ MonoBehaviour:
   IsSpell1: 0
   IsSpell2: 0
   IsSpell3: 0
+--- !u!54 &-6649769616880321477
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8577208061323181729}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

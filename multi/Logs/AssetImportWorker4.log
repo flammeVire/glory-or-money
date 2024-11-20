@@ -1,0 +1,1395 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.4f1 (35713cd46cd7) revision 3502396'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'fr' Physical Memory: 8029 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+E:\unity\2022.3.4f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+E:/unity/glory-or-money/multi
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+55387
+Successfully changed project path to: E:/unity/glory-or-money/multi
+E:/unity/glory-or-money/multi
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [2976] Host "[IP] 192.168.1.24 [Port] 0 [Flags] 2 [Guid] 206182714 [EditorId] 206182714 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-72UL8GNE) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [2976] Host "[IP] 192.168.1.24 [Port] 0 [Flags] 2 [Guid] 206182714 [EditorId] 206182714 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-72UL8GNE) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 2937.74 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.4f1 (35713cd46cd7)
+[Subsystems] Discovering subsystems at path E:/unity/2022.3.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/unity/glory-or-money/multi/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f91)
+    Vendor:   NVIDIA
+    VRAM:     3935 MB
+    Driver:   32.0.15.6081
+Initialize mono
+Mono path[0] = 'E:/unity/2022.3.4f1/Editor/Data/Managed'
+Mono path[1] = 'E:/unity/2022.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'E:/unity/2022.3.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56176
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/unity/2022.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.086727 seconds.
+- Loaded All Assemblies, in  3.785 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.520 seconds
+Domain Reload Profiling: 5305ms
+	BeginReloadAssembly (2184ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (3ms)
+	RebuildCommonClasses (398ms)
+	RebuildNativeTypeToScriptingClass (43ms)
+	initialDomainReloadingComplete (311ms)
+	LoadAllAssembliesAndSetupDomain (847ms)
+		LoadAssemblies (2180ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (837ms)
+			TypeCache.Refresh (835ms)
+				TypeCache.ScanAssembly (795ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1522ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1292ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (45ms)
+			SetLoadedEditorAssemblies (33ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (8ms)
+			ProcessInitializeOnLoadAttributes (824ms)
+			ProcessInitializeOnLoadMethodAttributes (381ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\unity\glory-or-money\multi\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\glory-or-money\multi\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 10.871 seconds
+Refreshing native plugins compatible for Editor in 352.77 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.156 seconds
+Domain Reload Profiling: 14024ms
+	BeginReloadAssembly (2007ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (32ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (86ms)
+	RebuildCommonClasses (117ms)
+	RebuildNativeTypeToScriptingClass (36ms)
+	initialDomainReloadingComplete (554ms)
+	LoadAllAssembliesAndSetupDomain (8153ms)
+		LoadAssemblies (8351ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1516ms)
+			TypeCache.Refresh (1392ms)
+				TypeCache.ScanAssembly (1266ms)
+			ScanForSourceGeneratedMonoScriptInfo (102ms)
+			ResolveRequiredComponents (21ms)
+	FinalizeReload (3157ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2655ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (11ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (276ms)
+			ProcessInitializeOnLoadAttributes (2291ms)
+			ProcessInitializeOnLoadMethodAttributes (56ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.30 seconds
+Refreshing native plugins compatible for Editor in 339.71 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3261 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (76.0 KB). Loaded Objects now: 3732.
+Memory consumption went from 140.7 MB to 140.7 MB.
+Total: 29.916800 ms (FindLiveObjects: 0.475100 ms CreateObjectMapping: 0.317700 ms MarkObjects: 27.383600 ms  DeleteObjects: 1.737800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:FusionILWeaverTriggerImporter/ConfigHash: b0b173a93bb19085723cb3d421b3a13b -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1612862.385103 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Slime.fbx
+  artifactKey: Guid(98b6b5acb733a7d40978488a64fb9392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Slime.fbx using Guid(98b6b5acb733a7d40978488a64fb9392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdc8b72732917250c58f7622b6a9245a') in 0.974651 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 38
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh
+  artifactKey: Guid(69a58d7382c04f74eabf5600037c68fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh using Guid(69a58d7382c04f74eabf5600037c68fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '751851702d25ac0c2c81b5011e86b452') in 0.000956 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1219.824333 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43961b8049909e0aad3f39d382a23e28') in 1.812632 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 175
+========================================================================
+Received Import Request.
+  Time since last request: 46.200701 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb9c282673fc8f5e4a91450b5eb55343') in 0.448318 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 175
+========================================================================
+Received Import Request.
+  Time since last request: 7.633957 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Material
+  artifactKey: Guid(5e35b9e2446391d4c9ce06c95ac8067f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Material using Guid(5e35b9e2446391d4c9ce06c95ac8067f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27c5291ad9af544574b43a694e5b28dc') in 0.000899 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.402664 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Material/cloth.mat
+  artifactKey: Guid(173fd2bdbf4cc5b4a8a9281df46dbbf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Material/cloth.mat using Guid(173fd2bdbf4cc5b4a8a9281df46dbbf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '481ea960cf59749bbc2eed591f63864a') in 0.090478 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Material/Mushroom_Top1.mat
+  artifactKey: Guid(0dfa351fdf0f5d74c818b0a58e9b5773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Material/Mushroom_Top1.mat using Guid(0dfa351fdf0f5d74c818b0a58e9b5773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fc5df87122fe2d2270629a0717e7df8') in 0.033896 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Material/mushroom_foot.mat
+  artifactKey: Guid(485847bd2b37f3442847931336122b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Material/mushroom_foot.mat using Guid(485847bd2b37f3442847931336122b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eeb0a1ed21076ee34e2746542cc7029') in 0.031827 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Material/Mushroom_top2.mat
+  artifactKey: Guid(78df9f7e9b3c90d4693a221792a261e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Material/Mushroom_top2.mat using Guid(78df9f7e9b3c90d4693a221792a261e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d4e98505d83c43f7d17554b3a5db149') in 0.063783 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 81.468765 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '952a71674b5c795b4b36cd6205a182c1') in 0.438227 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 118
+========================================================================
+Received Import Request.
+  Time since last request: 762.697741 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e83a56fe7aa47671cb6313a7b349f68d') in 0.059812 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 5828.703383 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5194a3e58c55afeb19b3f255f0506291') in 0.570272 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 175
+========================================================================
+Received Import Request.
+  Time since last request: 69.097326 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps
+  artifactKey: Guid(943f538f5dda83e49bb70a0b9d759785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps using Guid(943f538f5dda83e49bb70a0b9d759785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a446c8654eb3d09144b0725ee2b780f') in 0.001367 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 10.621003 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/Normal-Cloth.png
+  artifactKey: Guid(256d390fa480b3742bd614c09fcceeb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/Normal-Cloth.png using Guid(256d390fa480b3742bd614c09fcceeb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38eee2a786454c5b8e28db2830e89cbe') in 0.598358 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/Normal_Mud.png
+  artifactKey: Guid(328eeab797c5cb949ac0cb8c69214193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/Normal_Mud.png using Guid(328eeab797c5cb949ac0cb8c69214193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08ec6adceeab98aa2eee9719ba8ce247') in 0.040987 seconds
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/Normal_Mush.png
+  artifactKey: Guid(cd209d15d46cf0149a3dfb3ba3f3740e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/Normal_Mush.png using Guid(cd209d15d46cf0149a3dfb3ba3f3740e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a18ce4ca373f82ef4471330f88b18180') in 0.036590 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 43.767800 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/cloth.png
+  artifactKey: Guid(5f1b18089387ca748b85ca09033cb007) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/cloth.png using Guid(5f1b18089387ca748b85ca09033cb007) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '100d691751f906a82d99901e4df91765') in 0.026394 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/Mushroom.png
+  artifactKey: Guid(2e1cf7a5eb0f8614193a26616e155160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/Mushroom.png using Guid(2e1cf7a5eb0f8614193a26616e155160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a77b689adceaf5c425433894edc0be6') in 0.097521 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 43.787296 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aabd30ded07b9bac2ee82f59fe40576') in 2.297293 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 181
+========================================================================
+Received Import Request.
+  Time since last request: 4.559858 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Normal-Cloth.png
+  artifactKey: Guid(250948693de98e94dad737ab3a3aebee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Normal-Cloth.png using Guid(250948693de98e94dad737ab3a3aebee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c13f96a2131fa98f0c1a949e0029a8c') in 0.056156 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd62c4ae940f2e26e11d37575f50e4c0e') in 0.227333 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 181
+========================================================================
+Received Import Request.
+  Time since last request: 11.825578 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0809b902d3f7dfa5af0024d0136c393f') in 0.239148 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 180
+========================================================================
+Received Import Request.
+  Time since last request: 1.406449 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d9034fb6db08d6e7774afbb35852a13') in 0.261134 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 179
+========================================================================
+Received Import Request.
+  Time since last request: 12.354382 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec1b90f3ceda8703e39a45149c1ce633') in 0.253257 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 175
+========================================================================
+Received Import Request.
+  Time since last request: 8.088541 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d12b5c831ca15c7f61e4199e225f586') in 0.280144 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 181
+========================================================================
+Received Import Request.
+  Time since last request: 5.529387 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c517c6bb8566c057eb50c385785b955c') in 0.267907 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 181
+========================================================================
+Received Import Request.
+  Time since last request: 100.157170 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Slime.fbx
+  artifactKey: Guid(98b6b5acb733a7d40978488a64fb9392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Slime.fbx using Guid(98b6b5acb733a7d40978488a64fb9392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '899e0cee36ddaa417a8b79b49d2ea6f1') in 0.265743 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 37
+========================================================================
+Received Import Request.
+  Time since last request: 0.235431 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/cloth.png
+  artifactKey: Guid(7962e88c3bb16ee4eaa6c77524b8aa98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/cloth.png using Guid(7962e88c3bb16ee4eaa6c77524b8aa98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '739b5d0060b8be1e0e9fc22ce1ef6734') in 0.022727 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/Normal-Wood.png
+  artifactKey: Guid(29fe68c12be385f449fc048e246ec17e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/Normal-Wood.png using Guid(29fe68c12be385f449fc048e246ec17e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a71b1ccc2a32ecaba1ad5d0730a3913f') in 0.019409 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/Normal_Mud.png
+  artifactKey: Guid(35d082307bff2994196b476f0e48b5b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/Normal_Mud.png using Guid(35d082307bff2994196b476f0e48b5b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1544f62049f1f516289fc36b6d9fa214') in 0.018734 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 82.856695 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05a0ed79537521117df105defbdc4958') in 0.211889 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 117
+========================================================================
+Received Import Request.
+  Time since last request: 24.474722 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc972686b5841b763e186b0f17d31e1f') in 0.328421 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 179
+========================================================================
+Received Import Request.
+  Time since last request: 39.791357 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/Normal_Mush.png
+  artifactKey: Guid(cd209d15d46cf0149a3dfb3ba3f3740e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/Normal_Mush.png using Guid(cd209d15d46cf0149a3dfb3ba3f3740e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc6473676859b63709ba2dbc4f3f8657') in 0.027062 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 27.524913 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Material/Ecorce.mat
+  artifactKey: Guid(befbc8cdc7d333246a334dec8cf543e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Material/Ecorce.mat using Guid(befbc8cdc7d333246a334dec8cf543e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '408b1d10573d4b14a72a521cb836e79d') in 0.045542 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Material/Mushroom_Top1.mat
+  artifactKey: Guid(0dfa351fdf0f5d74c818b0a58e9b5773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Material/Mushroom_Top1.mat using Guid(0dfa351fdf0f5d74c818b0a58e9b5773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b34388d058de4cf429f9bd5de14f242') in 0.019674 seconds
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Material/Mushroom_top2.mat
+  artifactKey: Guid(78df9f7e9b3c90d4693a221792a261e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Material/Mushroom_top2.mat using Guid(78df9f7e9b3c90d4693a221792a261e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58139f953206d2868db3bfe332158c73') in 0.023810 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 34.021706 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e9e4b81cf24aad403bb2d77d44a22f3') in 0.258773 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 181
+========================================================================
+Received Import Request.
+  Time since last request: 1630.049275 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/Mushroom1.png
+  artifactKey: Guid(4ca3c23ee6b2cc54482f14c264386df6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/Mushroom1.png using Guid(4ca3c23ee6b2cc54482f14c264386df6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16384ed068e65a1fc43722322bf9689f') in 0.107268 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 10.346283 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Material/mushroom_foot.mat
+  artifactKey: Guid(485847bd2b37f3442847931336122b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Material/mushroom_foot.mat using Guid(485847bd2b37f3442847931336122b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a39fe24d469151c9c59dce0721846d18') in 0.315339 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Material/Mushroom_top2.mat
+  artifactKey: Guid(78df9f7e9b3c90d4693a221792a261e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Material/Mushroom_top2.mat using Guid(78df9f7e9b3c90d4693a221792a261e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9e2442dd6892981919fdf131ab58557') in 0.077012 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 200.740899 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd078272d9657cfe5bacc52620755c9e8') in 0.494127 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 180
+========================================================================
+Received Import Request.
+  Time since last request: 126.953650 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Material/Ecorce.mat
+  artifactKey: Guid(befbc8cdc7d333246a334dec8cf543e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Material/Ecorce.mat using Guid(befbc8cdc7d333246a334dec8cf543e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e09065709e3d0f6ee5a5f78dbe437b6b') in 0.021683 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 24.37 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (0.8 KB). Loaded Objects now: 3782.
+Memory consumption went from 93.1 MB to 93.1 MB.
+Total: 226.309600 ms (FindLiveObjects: 0.812100 ms CreateObjectMapping: 0.349100 ms MarkObjects: 225.122200 ms  DeleteObjects: 0.024600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:FusionILWeaverTriggerImporter/ConfigHash: b0b173a93bb19085723cb3d421b3a13b -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:Fusion.PrefabsDependency: 524a2cbaa578ecd68f58adfbb0044dff -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 334.408091 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e8b6afe75383b281a427e4b3ef1bb57') in 0.449744 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 71
+========================================================================
+Received Import Request.
+  Time since last request: 18.330858 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f015627b6b3fbf389880f8a97b8991fe') in 0.369283 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 80
+========================================================================
+Received Import Request.
+  Time since last request: 4.129857 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53e14247a9c396bcac5bbb8b8b0597c0') in 0.581553 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 80
+========================================================================
+Received Import Request.
+  Time since last request: 81.064378 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/cloth.png
+  artifactKey: Guid(273c4ff1bd6447346a6c8921f71267ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/cloth.png using Guid(273c4ff1bd6447346a6c8921f71267ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a5e20f39777010858b675ff2944051d') in 0.020239 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/Mushroom1.png
+  artifactKey: Guid(0c51e9fde8bb34e40b86e1bb1d5db922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/Mushroom1.png using Guid(0c51e9fde8bb34e40b86e1bb1d5db922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d9effa343c1d8fdac5589ae1327e4f9') in 0.024916 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/Normal-Wood.png
+  artifactKey: Guid(60ac2b02d661c724bbe3cc91407be498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/Normal-Wood.png using Guid(60ac2b02d661c724bbe3cc91407be498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d871b0dc3e88e5d977b39f67eb9bcc9') in 0.021253 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/mushroom2.png
+  artifactKey: Guid(21978c7c11c098144a8ab07ab8298ab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/mushroom2.png using Guid(21978c7c11c098144a8ab07ab8298ab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31a2d391b59a770850f8f36cb9ab8533') in 0.015000 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/Wood.png
+  artifactKey: Guid(448c4727b1136e74d8cd60fece859b3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/Wood.png using Guid(448c4727b1136e74d8cd60fece859b3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03ebcddaaa9cce29ca6d54109a39c1fe') in 0.027692 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 53.865937 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aebf24c8373a994e22f8b2b168836c7') in 0.242433 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 80
+========================================================================
+Received Import Request.
+  Time since last request: 12.213642 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Material/cloth.mat
+  artifactKey: Guid(173fd2bdbf4cc5b4a8a9281df46dbbf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Material/cloth.mat using Guid(173fd2bdbf4cc5b4a8a9281df46dbbf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f91e0bbe8e3bb05845ce650c071cc400') in 0.023729 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Material/Mushroom_Top1.mat
+  artifactKey: Guid(0dfa351fdf0f5d74c818b0a58e9b5773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Material/Mushroom_Top1.mat using Guid(0dfa351fdf0f5d74c818b0a58e9b5773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b47e30393de3a36c8c8e601f1f841d') in 0.084098 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Material/mushroom_foot.mat
+  artifactKey: Guid(485847bd2b37f3442847931336122b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Material/mushroom_foot.mat using Guid(485847bd2b37f3442847931336122b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0d292bc1ed306ed15fa6ec03b3da4f4') in 0.027387 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Material/Mud.mat
+  artifactKey: Guid(21ca33aa448fa8e4a9fe74db1f14617f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Material/Mud.mat using Guid(21ca33aa448fa8e4a9fe74db1f14617f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15905e8d869c3cab43e281571e5f5882') in 0.094942 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 644.491087 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Material/Mushroom_Top1.mat
+  artifactKey: Guid(0dfa351fdf0f5d74c818b0a58e9b5773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Material/Mushroom_Top1.mat using Guid(0dfa351fdf0f5d74c818b0a58e9b5773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a60bfd783ae0eab374d8e809fde8baa') in 0.070391 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.238784 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '467d863a7112088daae9185bbcd1d318') in 0.634194 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 80
+========================================================================
+Received Import Request.
+  Time since last request: 13.296515 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2c06fc6352386c89bc5a90efc09e58e') in 0.211178 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 117
+========================================================================
+Received Import Request.
+  Time since last request: 1128.640294 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/Mushroom1.png
+  artifactKey: Guid(0c51e9fde8bb34e40b86e1bb1d5db922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/Mushroom1.png using Guid(0c51e9fde8bb34e40b86e1bb1d5db922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bffecf886e9bc3e201566be749deca6c') in 0.408576 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 194.687563 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/Mushroom1.png
+  artifactKey: Guid(0c51e9fde8bb34e40b86e1bb1d5db922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/Mushroom1.png using Guid(0c51e9fde8bb34e40b86e1bb1d5db922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa3a85e99833630fff996a34f5270241') in 0.017100 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 10.623041 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/Maps/Mushroom1.png
+  artifactKey: Guid(0c51e9fde8bb34e40b86e1bb1d5db922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/Maps/Mushroom1.png using Guid(0c51e9fde8bb34e40b86e1bb1d5db922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db885a354584d45f2b7d3060e94ee43f') in 0.016753 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 228.785246 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c901c0dcba5c00b6c4fb89f4c51b63e6') in 0.837776 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 80
+========================================================================
+Received Import Request.
+  Time since last request: 9.963367 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '361ac810711f366f9d1f8a84b48d2f25') in 0.040436 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 16.893429 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '369fb20ca1a53175e6839df1fb1efd8c') in 0.023588 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 13.428173 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35b3a666fe13176f752dcbe975b9cb20') in 0.364899 seconds
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 80
+========================================================================
+Received Import Request.
+  Time since last request: 167.925313 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7917d056aec81c159b27aac006139312') in 0.167504 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 117
+========================================================================
+Received Import Request.
+  Time since last request: 1.548261 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19490459ea3051fe2502cb0d78cdc7f7') in 0.017435 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 117
+========================================================================
+Received Import Request.
+  Time since last request: 1.457220 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8f7317f707e478879a11ffd874c528e') in 0.023819 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 117
+========================================================================
+Received Import Request.
+  Time since last request: 2.787106 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa818ed47f98b03767536d8b42969280') in 0.018709 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 117
+========================================================================
+Received Import Request.
+  Time since last request: 9.057473 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '213a59a1ededfb73a36a79009f38ec2a') in 0.019694 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 117
+========================================================================
+Received Import Request.
+  Time since last request: 8.737247 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95e270a39ea988243cb5dcbdfc7e3317') in 0.023005 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 117
+========================================================================
+Received Import Request.
+  Time since last request: 6.994021 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea4d3524400317b57e268f6858f34245') in 0.017846 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 117
+========================================================================
+Received Import Request.
+  Time since last request: 172.522207 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccde0fd41a1f927dc5fc041b8edb5ed2') in 0.020550 seconds
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 117
+========================================================================
+Received Import Request.
+  Time since last request: 3.351778 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '726ffb9a84e86938769c8878b0d89584') in 0.017591 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 117
+========================================================================
+Received Import Request.
+  Time since last request: 9.411720 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '046a21e746609d2fc02167f94784b163') in 0.026429 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 117
+========================================================================
+Received Import Request.
+  Time since last request: 3.367680 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dc7b0d93879c36a3be7e989da4e4eb9') in 0.021949 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 117
+========================================================================
+Received Import Request.
+  Time since last request: 4.227887 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d77f71b5961802c79e645b5ba311f98') in 0.021649 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 117
+========================================================================
+Received Import Request.
+  Time since last request: 3.994221 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0155280a1e96c930dceded0d990e12db') in 0.148648 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 117
+========================================================================
+Received Import Request.
+  Time since last request: 11.373285 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b77e38f24b83b1734c11b60d5d421c9b') in 0.163899 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 117
+========================================================================
+Received Import Request.
+  Time since last request: 1.861449 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce19e4a0171d36b9e2604c3f94772e42') in 0.025440 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 117
+========================================================================
+Received Import Request.
+  Time since last request: 27.360568 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23f71c644f45d750539bd2697ff64fc4') in 0.018840 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 117
+========================================================================
+Received Import Request.
+  Time since last request: 6.865023 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4b90eb6f8ae3d03d1a3a8e404eef261') in 0.017714 seconds
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 117
+========================================================================
+Received Import Request.
+  Time since last request: 6.825539 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bd58e37bef9b69df0ada57b8dfdc2be') in 0.019710 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 117
+========================================================================
+Received Import Request.
+  Time since last request: 6.142497 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e11723c3d982373911d6b5ae0cf42273') in 0.018167 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 117
+========================================================================
+Received Import Request.
+  Time since last request: 1.790537 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1907bdc5b4a207eac749aae978a22aa9') in 0.020249 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 117
+========================================================================
+Received Import Request.
+  Time since last request: 11.385358 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '420677a0944a0fa3b92ba377d54bafda') in 0.021794 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 117
+========================================================================
+Received Import Request.
+  Time since last request: 1.880181 seconds.
+  path: Assets/Game/Prefab/Monster/Slime_Network Variant.prefab
+  artifactKey: Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Slime_Network Variant.prefab using Guid(085e91cd64aaa264ea5c44d81334287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54eb3b8b1fff45bfd1062a313ae78c8e') in 0.025108 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 117
+========================================================================
+Received Import Request.
+  Time since last request: 83.020521 seconds.
+  path: Assets/Game/Prefab/Monster/Monster_Network Variant.prefab
+  artifactKey: Guid(799a31eedc8d8974caf3cfc16b8d8022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Monster_Network Variant.prefab using Guid(799a31eedc8d8974caf3cfc16b8d8022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c96bf576950f6af4d12cc76c58cb904e') in 0.879070 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 169
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 15.95 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 3788.
+Memory consumption went from 93.7 MB to 93.7 MB.
+Total: 58.397500 ms (FindLiveObjects: 0.724400 ms CreateObjectMapping: 0.330500 ms MarkObjects: 57.326900 ms  DeleteObjects: 0.014200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:FusionILWeaverTriggerImporter/ConfigHash: b0b173a93bb19085723cb3d421b3a13b -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:Fusion.PrefabsDependency: 36a5de934d07ecf48db78e480319ed1a -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1.307698 seconds.
+  path: Assets/Game/Prefab/Monster/Monster_Network Variant.prefab
+  artifactKey: Guid(799a31eedc8d8974caf3cfc16b8d8022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Monster_Network Variant.prefab using Guid(799a31eedc8d8974caf3cfc16b8d8022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c96bf576950f6af4d12cc76c58cb904e') in 0.044163 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 169
+========================================================================
+Received Import Request.
+  Time since last request: 12.560164 seconds.
+  path: Assets/Game/Prefab/Monster/Swamp_Network.prefab
+  artifactKey: Guid(799a31eedc8d8974caf3cfc16b8d8022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Swamp_Network.prefab using Guid(799a31eedc8d8974caf3cfc16b8d8022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c009a8cbde598f339418890aeeb6322d') in 0.027836 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 169
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 11.70 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 3788.
+Memory consumption went from 93.7 MB to 93.7 MB.
+Total: 4.042400 ms (FindLiveObjects: 0.348600 ms CreateObjectMapping: 0.318300 ms MarkObjects: 3.365000 ms  DeleteObjects: 0.009400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:FusionILWeaverTriggerImporter/ConfigHash: b0b173a93bb19085723cb3d421b3a13b -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:Fusion.PrefabsDependency: f3987c9f5757d6d5accf275a79dc3236 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 181.524885 seconds.
+  path: Assets/Game/Animator
+  artifactKey: Guid(77589a57f2e5f1549a8be514043f59ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Animator using Guid(77589a57f2e5f1549a8be514043f59ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4e89c5b19b3cd39d5b72b710c8db21c') in 0.039579 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.638726 seconds.
+  path: Assets/Game/Animator/AC_Slime.controller
+  artifactKey: Guid(8cc95914cfa40484bb83f587258d9c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Animator/AC_Slime.controller using Guid(8cc95914cfa40484bb83f587258d9c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2439881f39b97424d865dfbe8285c10') in 0.105800 seconds
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 2.165796 seconds.
+  path: Assets/Game/Animator/AC_Slime 1.controller
+  artifactKey: Guid(3941ca3ed895b7040814b241606926b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Animator/AC_Slime 1.controller using Guid(3941ca3ed895b7040814b241606926b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '812c762121c9787917de3961b6728688') in 0.001865 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 6.401234 seconds.
+  path: Assets/Game/Animator/AC_Swamp.controller
+  artifactKey: Guid(3941ca3ed895b7040814b241606926b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Animator/AC_Swamp.controller using Guid(3941ca3ed895b7040814b241606926b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba54cc046afa2db4a179e828ff2c2f3c') in 0.002174 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 2082.003840 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9055f35a7082f9629c052b7aaaaf1dd') in 0.019909 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 123
+========================================================================
+Received Import Request.
+  Time since last request: 40.293599 seconds.
+  path: Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx
+  artifactKey: Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Mesh/SwampMonster.fbx using Guid(ffe6459e3b915c84f8745e7beaa67e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddd184b9acd7c94ef1aed25d0144789c') in 0.557126 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 188
+========================================================================
+Received Import Request.
+  Time since last request: 142.563822 seconds.
+  path: Assets/Game/Prefab/Monster/Swamp_Network.prefab
+  artifactKey: Guid(799a31eedc8d8974caf3cfc16b8d8022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Swamp_Network.prefab using Guid(799a31eedc8d8974caf3cfc16b8d8022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d781fcd9a4dd7c80bd41079d9582c7f') in 0.111292 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 373
+========================================================================
+Received Import Request.
+  Time since last request: 11.945966 seconds.
+  path: Assets/Game/Prefab/Monster/Swamp_Network.prefab
+  artifactKey: Guid(799a31eedc8d8974caf3cfc16b8d8022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Swamp_Network.prefab using Guid(799a31eedc8d8974caf3cfc16b8d8022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91c1b7aa1420ade7c745154454d4f9a2') in 0.042523 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 374
+========================================================================
+Received Import Request.
+  Time since last request: 2.754323 seconds.
+  path: Assets/Game/Prefab/Monster/Swamp_Network.prefab
+  artifactKey: Guid(799a31eedc8d8974caf3cfc16b8d8022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Swamp_Network.prefab using Guid(799a31eedc8d8974caf3cfc16b8d8022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '339ed61aadf8c65dffe8b5ea30dad3a1') in 0.112511 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 388
+========================================================================
+Received Import Request.
+  Time since last request: 6.851662 seconds.
+  path: Assets/Game/Prefab/Monster/Swamp_Network.prefab
+  artifactKey: Guid(799a31eedc8d8974caf3cfc16b8d8022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Swamp_Network.prefab using Guid(799a31eedc8d8974caf3cfc16b8d8022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f73c770f4056670c9c1c3ad71e00513') in 0.041483 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 388
+========================================================================
+Received Import Request.
+  Time since last request: 2.983262 seconds.
+  path: Assets/Game/Prefab/Monster/Swamp_Network.prefab
+  artifactKey: Guid(799a31eedc8d8974caf3cfc16b8d8022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Swamp_Network.prefab using Guid(799a31eedc8d8974caf3cfc16b8d8022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be1c69cdfd4d7309dd4c09db4e7069dc') in 0.052449 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 388
+========================================================================
+Received Import Request.
+  Time since last request: 45.613491 seconds.
+  path: Assets/Game/Prefab/Monster/Monster_Spawnpoint.prefab
+  artifactKey: Guid(d72f0e9153fdfb941ba3c145fa916c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Monster_Spawnpoint.prefab using Guid(d72f0e9153fdfb941ba3c145fa916c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7e7393e951ca0a5144d4e128d32b1be') in 0.018523 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 191
+========================================================================
+Received Import Request.
+  Time since last request: 2.917739 seconds.
+  path: Assets/Game/Prefab/Monster/Swamp_Network.prefab
+  artifactKey: Guid(799a31eedc8d8974caf3cfc16b8d8022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefab/Monster/Swamp_Network.prefab using Guid(799a31eedc8d8974caf3cfc16b8d8022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50044f95a9242b49fcf89f87b204f210') in 0.045823 seconds
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 387
+========================================================================
+Received Import Request.
+  Time since last request: 3.736577 seconds.
+  path: Assets/Game/Scenes/MenuScene.unity
+  artifactKey: Guid(e6c6331da8bb48b4b9c0878ead64013c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Scenes/MenuScene.unity using Guid(e6c6331da8bb48b4b9c0878ead64013c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f7e4ac3b8f86d0821aab5ba72f9262a') in 0.120380 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 5)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 5)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 6)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 6)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 5)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 5)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 6)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 6)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 7)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 7)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 8)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 8)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 9)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 9)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 10)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 10)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 11)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 11)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 12)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 12)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 13)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 13)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 14)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 14)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 15)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 15)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 5)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 5)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 6)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 6)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 7)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 7)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 15)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 15)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 10)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 10)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 15)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 15)
+Symbol file LoadedFromMemory doesn't match image E:\unity\glory-or-money\multi\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\glory-or-money\multi\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 10.705 seconds
+Refreshing native plugins compatible for Editor in 168.28 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 25.120 seconds
+Domain Reload Profiling: 35824ms
+	BeginReloadAssembly (1258ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (50ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (647ms)
+	RebuildCommonClasses (114ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (132ms)
+	LoadAllAssembliesAndSetupDomain (9164ms)
+		LoadAssemblies (7815ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1727ms)
+			TypeCache.Refresh (1714ms)
+				TypeCache.ScanAssembly (1389ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (25122ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1388ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (13ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (296ms)
+			ProcessInitializeOnLoadAttributes (998ms)
+			ProcessInitializeOnLoadMethodAttributes (54ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (52ms)
+Refreshing native plugins compatible for Editor in 292.37 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3240 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 59 unused Assets / (49.0 KB). Loaded Objects now: 3803.
+Memory consumption went from 144.1 MB to 144.0 MB.
+Total: 17.449300 ms (FindLiveObjects: 0.389100 ms CreateObjectMapping: 0.372600 ms MarkObjects: 16.467400 ms  DeleteObjects: 0.218300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:FusionILWeaverTriggerImporter/ConfigHash: b0b173a93bb19085723cb3d421b3a13b -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:Fusion.PrefabsDependency: f3987c9f5757d6d5accf275a79dc3236 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

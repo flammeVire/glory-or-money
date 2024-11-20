@@ -12,6 +12,7 @@ public class Player_Attaque : NetworkBehaviour
     public float Delay;
     public float Degat;
 
+    
     private void Start()
     {
         if (!HasInputAuthority) {  return; }
@@ -27,7 +28,7 @@ public class Player_Attaque : NetworkBehaviour
 
     private void Update()
     {
-        Debug.Log("Degat =" + Degat);
+        //Debug.Log("Degat =" + Degat);
     }
 
     IEnumerator Attaking() 
@@ -55,6 +56,7 @@ public class Player_Attaque : NetworkBehaviour
                 break;
             default: break;
         }
+        Debug.Log("Attente de :" + Delay);
         yield return new WaitForSeconds(Delay);
         //Debug.Log("Peut attaquer");
         StartCoroutine(Attaking());
